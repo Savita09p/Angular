@@ -1,0 +1,20 @@
+<!-- <p>merge-product1 works!</p> -->
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-4" *ngFor="let product of productsArr">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img [src]="product.image" [alt]="product.title" [title]="product.title">
+                    </div>
+                    <div class="col-md-6">
+                        <h2>{{product.title}}</h2>
+                        <p>{{product.review}}</p>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
